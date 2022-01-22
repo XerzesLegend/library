@@ -1,3 +1,6 @@
+let myLibrary = [];
+
+
 function Book(title, author, pages, read){
     this.title = title;
     this.author = author;
@@ -12,4 +15,13 @@ function Book(title, author, pages, read){
         }
     }
 
+
 }
+function addBookToLibrary(){}
+
+
+const showPopUpButton = document.querySelector('#showPopUp');
+const popUpContainer = document.querySelector('.popUpContainer');
+showPopUpButton.addEventListener('click', function(){
+    popUpContainer.classList.toggle('hide');
+})

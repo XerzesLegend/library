@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    background-color: rgb(194, 189, 189);
+}
+.headerContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(102, 50, 151);
+    z-index: 2;
+}
+.headerContainer h2{
+    padding: 8px;
+    flex: 1;
+}
+#showPopUp{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    right: 32px;
+    bottom: 32px;
+    border-radius: 50%;
+    font-size: 32px;
+    border: thin;
+}
+.popUpContainer{
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    flex-flow: column;
+    padding: 16px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 16px;
+}
+.closePopUpContainer{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: thin;
+    font-size: 24px;
+    padding: 0;
+    transform: rotate(45deg);
+}
+.inputDescription input{
+    border-radius: 16px;
+    border-width: 1px;
+    border-color: black;
+    border-style:solid;
+    padding: 4px;
+}
+.inputDescription h4{
+    text-align: center;
+    margin: 0 0 8px 0;
+}
+.addBookButton{
+    border-radius: 16px;
+    width: 100px;
+    height: 60px;
+    border: thin;
+}
+.hide{
+    display: none;
+}

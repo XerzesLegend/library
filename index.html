@@ -5,9 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="W3SlideCheckBox.css">
 </head>
 <body>
-    
+    <div class="headerContainer">
+        <h2>Your Virtual Library</h2>
+    </div>
+
+    <div class="mainContainer">
+        <div class="gridContainer">
+
+        </div>
+
+        <div class="popUpContainer hide">
+            <button class="closePopUpContainer">+</button>
+            <div class="inputDescription">
+                <h4>Title</h4>
+                <input type="text" name="title" id="title">
+            </div>
+            <div class="inputDescription">
+                <h4>Author Name</h4>
+                <input type="text" name="text" id="text">
+            </div>
+            <div class="inputDescription">
+                <h4>Number of Pages</h4>
+                <input type="number" name="pages" id="pages">
+            </div>
+            <div class="inputDescription">
+                <h4>Read?</h4>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <button class="addBookButton"><h4>Add Book</h4></button>
+        </div>
+
+        <button id="showPopUp">+</button>
+    </div>
 
     <script src="app.js"></script>
 </body>
