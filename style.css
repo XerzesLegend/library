@@ -22,12 +22,13 @@ body{
     border-radius: 50%;
     font-size: 32px;
     border: thin;
+    transition: all 0.2s ease-in-out;
 }
 .popUpContainer{
     position: absolute;
     width: 300px;
     height: 500px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -70,4 +71,27 @@ body{
 }
 .hide{
     display: none;
+}
+.rotate{
+    transform: rotate(45deg);
+}
+.gridContainer{
+    display: grid;
+    padding: 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    column-gap: 32px;
+    row-gap: 32px;
+}
+.book{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 32px;
+    background-color: white;
+    padding: 16px;
+    border-radius: 16px;
+}
+.bookContent{
+    text-align: center;
 }
